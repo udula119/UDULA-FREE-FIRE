@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b0b0f"><title>Udula FF | Diamond Top-Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar"><a class="brand" href="#home"><span class="logo">💎</span> UDULA <span class="accent">FF</span></a><button class="menu" id="menuBtn" aria-label="Toggle menu">☰</button><nav id="nav"><a href="#home">Home</a><a href="#packages">Packages</a><a href="#how">How to Order</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-content"><p class="eyebrow">WELCOME TO UDULA FF</p><h1>POWER UP YOUR<br><span class="accent">GAME.</span></h1><p class="sub">Fast, simple and player-friendly Free Fire top-up ordering.</p><a class="btn primary" href="#packages">EXPLORE PACKAGES <span>↗</span></a><p class="notice">Fan-made top-up storefront demo. Not affiliated with Garena.</p></div><div class="hero-art"><div class="ring"></div><div class="diamond-art">💎</div><div class="float-tag">LEVEL UP <span>✦</span></div></div></section>
+<section class="section" id="packages"><div class="section-head"><p class="eyebrow">CHOOSE YOUR POWER</p><h2>Diamond <span class="accent">Packages</span></h2><p>Select a package and enter your Player ID to prepare an order.</p></div><div class="grid" id="packageGrid"></div></section>
+<section class="section how" id="how"><div class="section-head"><p class="eyebrow">THREE SIMPLE STEPS</p><h2>How to <span class="accent">Order</span></h2></div><div class="steps"><article><span>01</span><h3>Select a package</h3><p>Choose the diamond package you want.</p></article><article><span>02</span><h3>Enter your UID</h3><p>Double-check your Free Fire Player ID.</p></article><article><span>03</span><h3>Send your order</h3><p>Send the order details via WhatsApp to the store operator.</p></article></div></section>
+<section class="section contact" id="contact"><div><p class="eyebrow">NEED HELP?</p><h2>Contact <span class="accent">Us</span></h2><p>Configure your WhatsApp number in <code>script.js</code> to enable ordering.</p></div><a class="btn outline" href="#packages">Browse Packages ↗</a></section>
+</main><footer><a class="brand" href="#home">💎 UDULA <span class="accent">FF</span></a><p>Fan-made storefront demo. Not affiliated with Garena or Free Fire.</p><p>© <span id="year"></span> Udula FF</p></footer>
+<div class="modal-backdrop" id="modal"><div class="modal"><button class="close" id="closeModal" aria-label="Close">×</button><p class="eyebrow">ORDER DETAILS</p><h2>Confirm your <span class="accent">package</span></h2><div id="selectedInfo" class="selected-info"></div><label for="uid">Free Fire Player UID</label><input id="uid" inputmode="numeric" placeholder="Enter your Player UID" maxlength="20"><label for="nickname">Nickname (optional)</label><input id="nickname" placeholder="Your in-game nickname"><p class="small-note">Please verify your UID before sending. This demo does not process payments or deliver diamonds.</p><button class="btn primary full" id="sendOrder">SEND ORDER VIA WHATSAPP ↗</button><p class="error" id="error"></p></div></div><div id="toast" class="toast"></div>
+<script src="script.js"></script></body></html>
